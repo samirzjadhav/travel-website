@@ -10,11 +10,11 @@ const Navbar = () => {
         <div className="navbar-logo">Trippy</div>
         <ul className="nav-menu">
           <li>
-            <Link>
-              <a href="">
-                <i>Home</i>
-              </a>{" "}
-            </Link>
+            {/* <Link to="/home"> */}
+            <a href="">
+              <i>Home</i>
+            </a>{" "}
+            {/* </Link> */}
           </li>
         </ul>
       </nav>
