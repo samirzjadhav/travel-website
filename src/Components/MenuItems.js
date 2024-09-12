@@ -1,38 +1,36 @@
+import { FaHouseChimneyUser } from "react-icons/fa6";
+import { FaCircleInfo } from "react-icons/fa6";
+import { FaBriefcase } from "react-icons/fa6";
+import { FaAddressBook } from "react-icons/fa6";
+
 export const MenuItems = [
   {
     title: "Home",
     url: "/",
     cName: "nav-links",
-    icon: "",
+    icon: <FaHouseChimneyUser />,
   },
   {
-    title: "Home",
-    url: "/",
+    title: "About",
+    url: "/about",
     cName: "nav-links",
-    icon: "",
+    icon: <FaCircleInfo />,
   },
   {
-    title: "Home",
-    url: "/",
+    title: "Services",
+    url: "/servises",
     cName: "nav-links",
-    icon: "",
+    icon: <FaBriefcase />,
   },
   {
-    title: "Home",
-    url: "/",
+    title: "Contact",
+    url: "/contact",
     cName: "nav-links",
-    icon: "",
+    icon: <FaAddressBook />,
   },
   {
-    title: "Home",
-    url: "/",
-    cName: "nav-links",
-    icon: "",
-  },
-  {
-    title: "Home",
-    url: "/",
-    cName: "nav-links",
-    icon: "",
+    title: "Sign Up",
+    url: "/sign-up",
+    cName: "nav-links-mobile",
   },
 ];
