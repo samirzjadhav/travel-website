@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="navbar-logo text-[#222] font-bold text-[32px] cursor-pointer">
           Trippy
         </div>
-        <ul className="nav-menu grid grid-cols-6 gap-[10px] items-center">
+        <ul className="nav-menu grid grid-cols-6 gap-[10px] items-center text-center">
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
@@ -26,6 +26,9 @@ const Navbar = () => {
               </li>
             );
           })}
+          <button className="py-[8px] x-[16px] whitespace-nowrap rounded-md bg-slate-300 cursor-pointer tansition ease-in-out delay-75 hover:bg-[#151516] hover:text-white">
+            Sign Up
+          </button>
         </ul>
       </nav>
     </>
