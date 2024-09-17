@@ -1,15 +1,27 @@
-import React from "react";
-import { Component } from "react";
+import React, { useState } from "react";
 import { MenuItems } from "./MenuItems";
 import "./NavbarStyle.css";
 import { Link } from "react-router-dom";
+import { FaBars } from "react-icons/fa6";
+import { MdClose } from "react-icons/md";
 
 const Navbar = () => {
+  // Use the useState hook to manage state in functional components
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(!clicked); // Toggle the clicked state
+  };
+
   return (
     <>
       <nav className="navbarItems flex justify-between items-center px-[30px] shadow-xl w-[95%] h-[80px] rounded-xl">
-        <div className="navbar-logo text-[#222] font-bold text-[32px] cursor-pointer">
+        <h1 className="navbar-logo text-[#222] font-bold text-[32px] cursor-pointer">
           Trippy
+        </h1>
+        {/* Use onClick to toggle the icons */}
+        <div className="menu-icons" onClick={handleClick}>
+          {clicked ? <FaBars /> : <MdClose />}
         </div>
         <ul className="nav-menu grid grid-cols-6 gap-[10px] items-center text-center">
           {MenuItems.map((item, index) => {
@@ -26,7 +38,7 @@ const Navbar = () => {
               </li>
             );
           })}
-          <button className="py-[8px] x-[16px] whitespace-nowrap rounded-md bg-slate-300 cursor-pointer tansition ease-in-out delay-75 hover:bg-[#151516] hover:text-white">
+          <button className="py-[8px] px-[16px] whitespace-nowrap rounded-md bg-slate-300 cursor-pointer transition ease-in-out delay-75 hover:bg-[#151516] hover:text-white">
             Sign Up
           </button>
         </ul>
