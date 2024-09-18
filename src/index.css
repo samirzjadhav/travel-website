@@ -11,3 +11,12 @@ body {
 #nav-links-mobile {
   display: none;
 }
+
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    @apply flex flex-col justify-start items-center bg-green-500 w-[100%] h-auto absolute top-0 left-0 opacity-100  pt-[80px] pb-[30px];
+  }
+  button {
+    @apply items-stretch;
+  }
+}

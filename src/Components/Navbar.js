@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { MenuItems } from "./MenuItems";
-import "./NavbarStyle.css";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa6";
 import { MdClose } from "react-icons/md";
