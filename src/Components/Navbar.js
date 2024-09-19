@@ -28,7 +28,7 @@ const Navbar = () => {
               <li key={index}>
                 <a
                   href="/"
-                  className="flex gap-[10px] items-center text-[18px] pr-[10px] hover:bg-[#01959a] hover:text-white hover:rounded-sm hover:transition-all hover:px-[10px] hover:py-[10px] hover:ease-in-out hover:delay-75"
+                  className="flex gap-[10px] items-center text-[18px] pr-[10px]"
                   id={item.cName}
                 >
                   <i>{item.icon}</i>
