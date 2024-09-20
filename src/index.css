@@ -12,13 +12,21 @@ body {
   display: none;
 }
 
+.nav-menu {
+  @apply grid grid-cols-6 gap-[10px] items-center text-center;
+}
+
 .nav-menu li:hover {
   @apply bg-[#01959a] text-white rounded-sm transition-all px-[10px] py-[10px] ease-in-out delay-75;
 }
 
 @media screen and (max-width: 768px) {
   .nav-menu {
-    @apply flex flex-col justify-start items-stretch bg-green-500 w-[100%] h-auto absolute top-0 left-0 opacity-100 pt-[80px] pb-[30px];
+    @apply flex flex-col justify-start items-stretch  w-[100%] h-auto absolute top-0 left-[-100%] opacity-100 pt-[80px] pb-[30px];
+  }
+
+  .nav-menu.active {
+    @apply left-0 opacity-100 z-[-1];
   }
 
   .nav-menu li {
@@ -29,12 +37,20 @@ body {
     @apply text-2xl;
   }
 
-  /* Keep the hover effect similar to desktop */
   .nav-menu li:hover {
-    @apply bg-[#01959a] text-white rounded-sm transition-all px-[10px] py-[10px] ease-in-out delay-75;
+    @apply bg-[#01959a] text-white rounded-sm transition-all px-[30px] py-[10px] ease-in-out delay-75;
   }
 
   button {
-    @apply items-stretch;
+    @apply hidden;
+  }
+
+  #nav-links-mobile {
+    @apply block text-center p-[24px] m-auto rounded-sm w-[80%] bg-[#01959a] text-white;
+  }
+
+  /* Ensure hover works for touch devices */
+  .nav-menu li:active {
+    @apply bg-[#01959a] text-white;
   }
 }
