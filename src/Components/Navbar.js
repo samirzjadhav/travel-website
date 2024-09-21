@@ -14,13 +14,13 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbarItems flex justify-between items-center px-[30px] shadow-xl w-[95%] h-[80px] z-20 rounded-xl">
+      <nav className="navbarItems flex justify-between items-center px-[30px] w-[95%] h-[80px] fixed top-[20px] left- z-20 rounded-xl">
         <h1 className="navbar-logo text-[#222] font-bold text-[32px] cursor-pointer">
           Trippy
         </h1>
         {/* Use onClick to toggle the icons */}
         <div className="menu-icons sm:hidden" onClick={handleClick}>
-          {clicked ? <FaBars /> : <MdClose />}
+          {clicked ? <MdClose /> : <FaBars />}
         </div>
         <ul className={clicked ? "nav-menu active" : "nav-menu"}>
           {MenuItems.map((item, index) => {
