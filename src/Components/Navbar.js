@@ -26,14 +26,14 @@ const Navbar = () => {
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <a
-                  href="/"
+                <Link
+                  to={item.url}
                   className="flex gap-[10px] items-center text-[18px] pr-[10px]"
                   id={item.cName}
                 >
                   <i>{item.icon}</i>
                   <i>{item.title}</i>
-                </a>
+                </Link>
               </li>
             );
           })}
