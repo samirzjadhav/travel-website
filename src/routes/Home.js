@@ -12,6 +12,9 @@ const Home = () => {
         heroImg={HeroImg}
         title="Your Journey Your Story"
         discri="Choose Your Favourite Destination."
+        btnText="Travel Plan"
+        url="/"
+        btnClass="show"
       />
     </>
   );

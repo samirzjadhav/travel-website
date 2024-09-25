@@ -28,6 +28,31 @@ body {
   @apply bg-[#01959a] text-white rounded-sm transition-all px-[10px] py-[10px] ease-in-out delay-75;
 }
 
+/* Hero Section */
+.hero {
+  @apply w-[100%] h-[100%] relative;
+}
+
+.heroImg {
+  @apply w-[100%] h-[100%] object-cover;
+}
+
+.hero-text {
+  @apply absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] text-center w-[100%];
+}
+
+.hero-text h1 {
+  @apply text-5xl text-white font-bold ;
+}
+
+.hero-text p {
+  @apply text-2xl text-white pt-[8px] pb-[32px];
+}
+
+.hero-text .show {
+  @apply py-[16px] px-[32px] rounded-md text-[18px] bg-white font-bold;
+}
+
 @media screen and (max-width: 768px) {
   .nav-menu {
     @apply flex flex-col justify-start items-stretch ease-in-out delay-75  w-[100%] h-auto absolute top-0 left-[-100%] opacity-100 pt-[80px] pb-[30px];
