@@ -30,7 +30,7 @@ body {
 
 /* Hero Section */
 .hero {
-  @apply w-[100%] h-[100%] relative;
+  @apply w-[100%] h-[100vh] relative;
 }
 
 .heroImg {
@@ -42,15 +42,15 @@ body {
 }
 
 .hero-text h1 {
-  @apply text-5xl text-white font-bold ;
+  @apply text-5xl text-white font-bold py-[10px] px-[20px];
 }
 
 .hero-text p {
-  @apply text-2xl text-white pt-[8px] pb-[32px];
+  @apply text-xl sm:text-2xl text-white pb-[32px] sm:pt-[8px] sm:pb-[32px];
 }
 
 .hero-text .show {
-  @apply py-[16px] px-[32px] rounded-md text-[18px] bg-white font-bold;
+  @apply py-[10px] px-[18px] sm:py-[16px] sm:px-[32px] rounded-md text-[16px] sm:text-[18px] bg-white font-bold;
 }
 
 @media screen and (max-width: 768px) {
