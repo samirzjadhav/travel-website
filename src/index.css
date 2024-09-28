@@ -60,7 +60,7 @@ Img {
 }
 
 .hero-mid h1 {
-  @apply text-[64px];
+  @apply text-[64px] pt-[64px];
 }
 
 @media screen and (max-width: 768px) {

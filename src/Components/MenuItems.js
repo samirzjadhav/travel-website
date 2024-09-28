@@ -17,8 +17,8 @@ export const MenuItems = [
     icon: <FaCircleInfo />,
   },
   {
-    title: "Services",
-    url: "/servises",
+    title: "Service",
+    url: "/service",
     cName: "nav-links",
     icon: <FaBriefcase />,
   },
