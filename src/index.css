@@ -8,6 +8,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.App {
+  @apply text-center;
+}
+
+/* Navbar */
+
 #nav-links-mobile {
   display: none;
 }
@@ -61,6 +67,40 @@ Img {
 
 .hero-mid h1 {
   @apply text-[64px] pt-[64px];
+}
+
+/* Destination */
+
+.destination {
+  @apply my-[64px] mx-[32px] md:mx-[96px];
+}
+
+.destination h1 {
+  @apply text-[48px] text-center;
+}
+
+.first-des {
+  @apply flex flex-col-reverse md:flex-row items-center justify-between mt-[40px] md:mt-[72px];
+}
+
+.des-text {
+  @apply md:w-[45%] text-start text-[18px];
+}
+
+.des-text h2 {
+  @apply text-[24px] font-bold pb-[16px];
+}
+
+.destination .images {
+  @apply my-[1.8rem] md:my-[16px]  md:w-[50%] h-[100%] relative flex justify-between z-[-99];
+}
+
+.destination .images img {
+  @apply w-[49%] h-[350px] rounded-md shadow-2xl object-cover;
+}
+
+.destination .images img:nth-child(2) {
+  @apply absolute top-[-10%] right-0;
 }
 
 @media screen and (max-width: 768px) {
