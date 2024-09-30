@@ -83,6 +83,10 @@ Img {
   @apply flex flex-col-reverse md:flex-row items-center justify-between mt-[40px] md:mt-[72px];
 }
 
+.first-des-reverse {
+  @apply flex flex-col-reverse md:flex-row-reverse items-center justify-between mt-[40px] md:mt-[72px];
+}
+
 .des-text {
   @apply md:w-[45%] text-start text-[18px];
 }
