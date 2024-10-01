@@ -107,6 +107,46 @@ Img {
   @apply absolute top-[-10%] right-0;
 }
 
+/* Trips */
+.trip {
+  @apply my-[64px] mx-[32px] md:mx-[96px];
+}
+
+.trip h1 {
+  @apply text-[48px] text-center font-bold;
+}
+
+.tripcard {
+  @apply mt-[48px] flex flex-col md:flex-row  justify-center  md:justify-between;
+}
+
+.t-card {
+  @apply md:w-[32%]  text-start shadow-2xl rounded-md cursor-pointer mt-[20px] md:mt-0 py-[16px] px-[16px];
+}
+
+.t-image {
+  @apply w-[100%] h-[200px] object-cover rounded-md;
+}
+
+.t-image img {
+  @apply w-[100%] h-[100%] object-cover rounded-md;
+}
+
+/* Apply overflow: hidden to the container */
+.t-image {
+  overflow: hidden;
+}
+
+.t-image:hover img {
+  transform: scale(1.3);
+  transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+/* Styling for card heading */
+.t-card h4 {
+  @apply text-[24px] font-bold pt-[16px] pb-[8px];
+}
+
 @media screen and (max-width: 768px) {
   .nav-menu {
     @apply flex flex-col justify-start items-stretch ease-in-out delay-75  w-[100%] h-auto absolute top-0 left-[-100%] opacity-100 pt-[80px] pb-[30px];
