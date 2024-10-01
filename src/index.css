@@ -147,6 +147,36 @@ Img {
   @apply text-[24px] font-bold pt-[16px] pb-[8px];
 }
 
+/* Footer */
+
+.footer {
+  @apply p-[64px] bg-black text-white;
+}
+
+.top {
+  @apply flex justify-between items-center text-start flex-wrap;
+}
+
+.top h1 {
+  @apply text-[40px] font-bold;
+}
+
+.bottom {
+  @apply flex justify-between items-center text-start flex-wrap pt-[32px];
+}
+
+.bottom div {
+  @apply flex flex-col;
+}
+
+.bottom h4 {
+  @apply text-[20px] font-bold pt-[16px] pb-[12px];
+}
+
+.bottom a {
+  @apply text-[18px] pb-[6px];
+}
+
 @media screen and (max-width: 768px) {
   .nav-menu {
     @apply flex flex-col justify-start items-stretch ease-in-out delay-75  w-[100%] h-auto absolute top-0 left-[-100%] opacity-100 pt-[80px] pb-[30px];

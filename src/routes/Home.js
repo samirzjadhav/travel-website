@@ -3,6 +3,7 @@ import Navbar from "../Components/Navbar";
 import Hero from "../Components/Hero";
 import Destination from "../Components/Destination";
 import Trips from "../Components/Trip";
+import Footer from "../Components/Footer";
 import HeroImg from "../assets/1.jpg";
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
       />
       <Destination />
       <Trips />
+      <Footer />
     </>
   );
 };
