@@ -194,6 +194,35 @@ Img {
   @apply text-[18px]  pb-[32px];
 }
 
+/* Form Container */
+.form-container {
+  @apply my-[64px] mx-[6rem] md:mx-[96px] p-[20px] text-start;
+}
+
+.form-container h1 {
+  @apply text-[30px] font-bold pb-[16px] text-center;
+}
+
+.form-container form {
+  @apply pt-[48px] flex flex-col  w-[50%] m-auto;
+}
+
+.form-container input {
+  @apply h-[48px] px-[16px] mb-[32px] border-black border-2 rounded-lg;
+}
+
+.form-container textarea {
+  @apply p-[16px]  mb-[32px] border-black border-2 rounded-lg;
+}
+
+.form-container button {
+  @apply bg-gray-400 text-white text-[16px] font-medium whitespace-nowrap rounded-sm py-[8px] px-[16px] ease-in-out cursor-pointer;
+}
+
+.form-container button:hover {
+  @apply bg-black ;
+}
+
 @media screen and (max-width: 768px) {
   .nav-menu {
     @apply flex flex-col justify-start items-stretch ease-in-out delay-75  w-[100%] h-auto absolute top-0 left-[-100%] opacity-100 pt-[80px] pb-[30px];
